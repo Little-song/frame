@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "app\\controller\\": "app/controller",
+            "app\\model\\": "app/model",
+            "app\\view\\": "app/view",
+            "core\\": "core"
+        }
+    },
+    "require": {
+        "catfan/medoo": "^1.7",
+        "league/plates": "^3.3"
+    }
+}

@@ -11,4 +11,4 @@ $view = new View('app/view');
 
 $staff = new Staff($model, $view);
 
-echo $staff->index();
+

@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitf92c675e304a252675568777948c1ce7
 {
     public static $prefixLengthsPsr4 = array (
+        'u' => 
+        array (
+            'users\\' => 6,
+        ),
         'c' => 
         array (
             'core\\' => 5,
@@ -25,9 +29,17 @@ class ComposerStaticInitf92c675e304a252675568777948c1ce7
         array (
             'League\\Plates\\' => 14,
         ),
+        'K' => 
+        array (
+            'Klein\\' => 6,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'users\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/users',
+        ),
         'core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core',
@@ -51,6 +63,10 @@ class ComposerStaticInitf92c675e304a252675568777948c1ce7
         'League\\Plates\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/plates/src',
+        ),
+        'Klein\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/klein/klein/src/Klein',
         ),
     );
 

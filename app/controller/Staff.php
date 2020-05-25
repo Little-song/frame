@@ -1,23 +1,27 @@
 <?php
 namespace app\controller;
 
-class Staff
-{
-    public $model;
-    public $view;
+use core\Controller;
+use app\model\StaffModel;
+use core\View;
 
-    public function __construct($model, $view)
-    {
-        $this->model = $model;
-        $this->view = $view;
-    }
+class Staff extends Controller
+{
 
     public function index()
     {
-        $data = $this->model->getInfo();
+        $model = new StaffModel;
 
-        // print_r($data);die;
+        $data = $model->getInfo();
 
-        return $this->view->render('staff/index', ['staffs' => $data]);
+        $view = new View('app/view');
+
+        echo $view->render('staff/index', ['staffs' => $data]);
     }
+
+    public function demo()
+    {
+        echo 'Hey, this is a staff controller demo method!';
+    }
+
 }

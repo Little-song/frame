@@ -6,10 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'users\\' => array($baseDir . '/users'),
     'core\\' => array($baseDir . '/core'),
     'app\\view\\' => array($baseDir . '/app/view'),
     'app\\model\\' => array($baseDir . '/app/model'),
     'app\\controller\\' => array($baseDir . '/app/controller'),
     'Medoo\\' => array($vendorDir . '/catfan/medoo/src'),
     'League\\Plates\\' => array($vendorDir . '/league/plates/src'),
+    'Klein\\' => array($vendorDir . '/klein/klein/src/Klein'),
 );

@@ -4,11 +4,13 @@
             "app\\controller\\": "app/controller",
             "app\\model\\": "app/model",
             "app\\view\\": "app/view",
-            "core\\": "core"
+            "core\\": "core",
+            "users\\": "users"
         }
     },
     "require": {
         "catfan/medoo": "^1.7",
-        "league/plates": "^3.3"
+        "league/plates": "^3.3",
+        "klein/klein": "^2.1"
     }
 }
